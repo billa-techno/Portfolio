@@ -231,7 +231,12 @@
       color: var(--text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 12px;
     }
     .tech-stack-badges {
-      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
     }
     .tech-badge {
       background: var(--bg-color);

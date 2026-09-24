@@ -23,10 +23,11 @@
   </nav>
 
   <div class="back-wrap">
-    <a href="portfolio (1).html#about" class="btn-back">&#8592; Kembali ke Projects</a>
+    <a href="portfolio (1).html#projects" class="btn-back">&#8592; Kembali ke Projects</a>
   </div>
 
   <div class="detail-wrap">
+    <!-- KOLOM KIRI -->
     <div class="detail-left">
       <div class="project-header">
         <div class="project-type-badge">UI/UX Mobile App</div>
@@ -34,11 +35,14 @@
         <p class="project-subtitle">Merancang aplikasi mobile interaktif dengan fokus pada kemudahan navigasi pengguna dan estetika antarmuka yang modern untuk layanan pusat kesehatan.</p>
       </div>
 
-      <div class="img-main-wrap">🏥</div>
+      <div class="img-main-wrap" id="mainImage">💰</div>
+      
+      <!-- 4 Gambar Thumbnail di Sebelah Kanan Dibawah Deskripsi/Gambar Utama -->
       <div class="img-thumbs">
-        <div class="img-thumb active">🏥</div>
-        <div class="img-thumb">📱</div>
-        <div class="img-thumb">🩺</div>
+        <div class="img-thumb active" onclick="changeImage('💰')">💰</div>
+        <div class="img-thumb" onclick="changeImage('📊')">📊</div>
+        <div class="img-thumb" onclick="changeImage('📱')">📱</div>
+        <div class="img-thumb" onclick="changeImage('💳')">💳</div>
       </div>
 
       <div class="content-block">
@@ -56,7 +60,7 @@
       </div>
 
       <div class="content-block">
-        <h3 class="block-title">Proses Desain</h3>
+        <h3 class="block-title">Proses Design</h3>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-icon" style="background:#E8F4FD;">🔍</div>
@@ -79,7 +83,7 @@
           </div>
           <div class="step-arrow">›</div>
           <div class="process-step">
-            <div class="step-icon" style="background:#E0F7F6;">🖱️</div>
+            <div class="step-icon" style="background:#FFE0EC;">🖱️</div>
             <span class="step-label">Prototype</span>
           </div>
         </div>
@@ -113,40 +117,16 @@
       </div>
     </div>
 
-    <div class="detail-right">
-      <div class="sidebar-card">
-        <div class="sidebar-title">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Informasi Project
-        </div>
-        <div class="info-row">
-          <div class="info-item">
-            <span class="info-label">Role</span>
-            <span class="info-value">UI/UX Designer</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Platform</span>
-            <span class="info-value">Mobile</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Tools</span>
-            <span class="info-value">Figma</span>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Project Type</span>
-            <span class="info-value">Academic Project</span>
-          </div>
-        </div>
-      </div>
-
+      <!-- Card 2: Preview Desain (Sejajar dengan Latar Belakang) -->
       <div class="sidebar-card">
         <div class="sidebar-title">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
           Preview Desain
         </div>
-        <div class="preview-img">🏥</div>
+        <div class="preview-img" id="sidePreview">💰</div>
       </div>
 
+      <!-- Card 3: Link Prototype / Terkait (Di Bawah Preview Desain) -->
       <div class="sidebar-card">
         <div class="sidebar-title">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
@@ -166,6 +146,7 @@
   <footer>
     <p>&copy; 2026 <span>Rachma Nabilah</span>. All Rights Reserved.</p>
   </footer>
+
   <script src="js/detail.js"></script>
 </body>
 </html>
