@@ -70,10 +70,6 @@ font-size: 20px;
 font-weight: 700;
 }
 
-.nav-brand span {
-color: var(--pink);
-}
-
 .nav-links {
 display: flex;
 gap: 24px;
