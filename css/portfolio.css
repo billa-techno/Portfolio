@@ -239,6 +239,9 @@
       margin-top: 16px;
     }
     .tech-badge {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       background: var(--bg-color);
       border: 2px solid var(--border-color);
       padding: 6px 12px; font-size: 13px; font-weight: 700;
