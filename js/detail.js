@@ -14,7 +14,8 @@ function changeImage(content) {
   // Aktifkan border/style pada thumbnail yang dipilih
   const thumbs = document.querySelectorAll('.img-thumb');
   thumbs.forEach(thumb => {
-    if (thumb.innerHTML === content) {
+    const emojiSpan = thumb.querySelector('.thumb-emoji');
+    if (emojiSpan && emojiSpan.textContent === content) {
       thumb.classList.add('active');
     } else {
       thumb.classList.remove('active');
